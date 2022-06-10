@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g4mlPP4ca4Y/fFBF6U4/YLcz1liRfMrHDUxo3OLCv16blcyxgyHxfY0Lw9XCqgDtgvBqs7jaljJAEPJwOIs4IQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\benjamin.eich\\source\\repos\\BankApp\\BankApp\\BankApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\benjamin.eich\\.nuget\\packages\\mstest.testframework\\2.2.10\\mstest.testframework.2.2.10.nupkg.sha512"
+  ],
+  "logs": []
+}
