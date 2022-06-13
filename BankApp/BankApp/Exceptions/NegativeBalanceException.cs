@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankApp.BankApp.Exceptions
 {
-    internal class NegativeBalanceException : Exception
+    public class NegativeBalanceException : Exception
     {
         public override string Message
         {

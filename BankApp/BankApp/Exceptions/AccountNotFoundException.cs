@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankApp.BankApp.Exceptions
 {
-    internal class AccountNotFoundException : Exception
+    public class AccountNotFoundException : Exception
     {
         public override string Message
         {

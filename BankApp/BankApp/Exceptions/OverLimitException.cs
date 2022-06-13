@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankApp.BankApp.Exceptions
 {
-    internal class OverLimitException : Exception
+    public class OverLimitException : Exception
     {
         public override string Message
         {

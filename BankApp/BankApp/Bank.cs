@@ -43,7 +43,14 @@ namespace BankApp.BankApp
                     try
                     {
                         TFAccount.TransferOut(amt);
-                        TTAccount.TransferIn(amt);
+                        // Should be failing here. IDK why not
+                        try
+                        {
+                            TTAccount.TransferIn(amt);
+                        } catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
                     } 
                     catch (Exception e)
                     {

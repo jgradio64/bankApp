@@ -37,7 +37,15 @@ namespace BankApp.BankApp.Accounts
 
         public void TransferOut(double amt)
         {
-            Balance -= amt;
+            if (NonNegativeBalance(amt))
+            {
+                Balance -= amt;
+            }
+            else
+            {
+                Exception exception = new NegativeBalanceException();
+                throw exception;
+            }
         }
 
         public virtual void Withdraw(double amt)
@@ -49,7 +57,7 @@ namespace BankApp.BankApp.Accounts
             else
             {
                 Exception exception = new NegativeBalanceException();
-                Console.WriteLine("Exception: " + exception);
+                Console.WriteLine(exception);
             }
 
         }
