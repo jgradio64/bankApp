@@ -6,22 +6,12 @@ using System.Threading.Tasks;
 
 namespace BankApp.BankApp.Owners
 {
-    internal class CorporateOwner : AccountOwner
+    public class CorporateOwner : AccountOwner
     {
-        private string BusinessName;
-        private string Email;
-
-
-        internal CorporateOwner(string id, string businessName, string email, string phoneNumber, string address, string city, string state, string postalCode) : base(id, phoneNumber, address, city, state, postalCode)
+        public CorporateOwner(string id, string businessName, string email, string phoneNumber, string address, string city, string state, string postalCode) 
+            : base(id, email, phoneNumber, address, city, state, postalCode)
         {
-            BusinessName = businessName;
-            Email = email;
+            this.SetName(businessName);
         }
-
-        public string GetName() { return BusinessName; }
-        public string GetContactEmail() { return Email; }
-
-        public void SetBusinessName(string businessName) { BusinessName = businessName; }
-        public void SetEmail(string email) { Email = email; }
     }
 }

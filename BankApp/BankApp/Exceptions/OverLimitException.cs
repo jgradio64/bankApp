@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BankApp.BankApp.Exceptions
 {
-    internal class NegativeBalanceException : Exception
+    internal class OverLimitException : Exception
     {
         public override string Message
         {
-            get { return "The action cannot be completed as an account cannot have a negative balance."; }
+            get { return "Inidividual investment accounts can only withdraw $500 at a time"; }
         }
     }
 }

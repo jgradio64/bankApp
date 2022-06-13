@@ -1,0 +1,6 @@
+C:\Users\benjamin.eich\source\repos\BankApp\BankTests\obj\Debug\net6.0\BankTests.csproj.AssemblyReference.cache
+C:\Users\benjamin.eich\source\repos\BankApp\BankTests\obj\Debug\net6.0\BankTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\benjamin.eich\source\repos\BankApp\BankTests\obj\Debug\net6.0\BankTests.AssemblyInfoInputs.cache
+C:\Users\benjamin.eich\source\repos\BankApp\BankTests\obj\Debug\net6.0\BankTests.AssemblyInfo.cs
+C:\Users\benjamin.eich\source\repos\BankApp\BankTests\obj\Debug\net6.0\BankTests.csproj.CoreCompileInputs.cache
+C:\Users\benjamin.eich\source\repos\BankApp\BankTests\bin\Debug\net6.0\CoverletSourceRootsMapping

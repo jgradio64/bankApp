@@ -8,8 +8,8 @@ namespace BankApp
         static void Main(string[] args)
         {
             Bank TCU = new Bank("005143", "Teacher's Credit Union");
-            Console.WriteLine(TCU.GetName());
-            TCU.PrintAccountInfo();
+            Console.WriteLine(TCU.GetAccountList());
+            TCU.PrintAllAccountInfo();
         }
     }
 }

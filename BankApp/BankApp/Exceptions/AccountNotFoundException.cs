@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BankApp.BankApp.Exceptions
 {
-    internal class NegativeBalanceException : Exception
+    internal class AccountNotFoundException : Exception
     {
         public override string Message
         {
-            get { return "The action cannot be completed as an account cannot have a negative balance."; }
+            get { return "There was no account found with that matching ID"; }
         }
     }
 }

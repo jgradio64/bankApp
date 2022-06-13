@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BankApp.BankApp.Exceptions;
 
 namespace BankApp.BankApp.Accounts
 {
-    public class Account : IAccount
+    public abstract class Account : IAccount
     {
-        private double Balance;
+        internal double Balance;
         private readonly string _id;
 
         public Account(double InitialDeposit, string id)
@@ -16,6 +17,8 @@ namespace BankApp.BankApp.Accounts
             Balance = InitialDeposit;
             _id = id;
         }
+
+        public string GetId() { return _id; }
 
         public void Deposit(double amt)
         {
@@ -37,7 +40,7 @@ namespace BankApp.BankApp.Accounts
             Balance -= amt;
         }
 
-        public void Withdraw(double amt)
+        public virtual void Withdraw(double amt)
         {
             if (NonNegativeBalance(amt))
             {
@@ -51,7 +54,7 @@ namespace BankApp.BankApp.Accounts
 
         }
 
-        private bool NonNegativeBalance(double amt)
+        internal bool NonNegativeBalance(double amt)
         {
             if (Balance <= 0 || amt > Balance)
             {

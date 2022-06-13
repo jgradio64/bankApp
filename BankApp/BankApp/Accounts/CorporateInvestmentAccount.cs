@@ -7,17 +7,17 @@ using BankApp.BankApp.Owners;
 
 namespace BankApp.BankApp.Accounts
 {
-    public class CheckingsAccount : Account
+    public class CorporateInvestmentAccount : Account
     {
-        private AccountOwner Owner;
-        public CheckingsAccount(AccountOwner accountOwner, string id, double initialDeposit) : base(initialDeposit, id)
-        {
+        private CorporateOwner Owner;
+        // No limit on withdraws, corporate owner
+        public CorporateInvestmentAccount(CorporateOwner accountOwner, string id, double initDeposit) : base(initDeposit, id) {
             Owner = accountOwner;
         }
-
         public AccountOwner GetAccountOwner()
         {
             return Owner;
         }
+
     }
 }
